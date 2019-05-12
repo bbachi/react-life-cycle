@@ -46,14 +46,14 @@ class App extends Component {
 
   render() {
 
-    console.log("this is from render()")
+    const name = this.state.name?this.state.name.toUpperCase():'';
 
     return (
       <div className="App">
         <header className="App-header">
         </header>
         <div> 
-            <p>{this.state.name}</p>
+            <p>{name}</p>
             <a href="#" onClick={() => this.togglePerson()}>toggle address</a>
             <div>
             <label>Change address</label>
